@@ -23,6 +23,7 @@
 @endassets
 
 <div>
+    <h1 class="text-2xl font-bold mb-3">Text Editor</h1>
     <div wire:ignore>
         <div class="overflow-hidden">
             <textarea id="editor" ></textarea>
