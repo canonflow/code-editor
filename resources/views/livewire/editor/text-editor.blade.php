@@ -16,17 +16,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <style>
-        .cm-editor { height: 300px; }
+        .cm-editor { height: 350px; }
         .cm-scroller { overflow: auto; }
         .cm-gutters { margin: 1px; }
+        #editor {
+            /*width: 400px;*/
+            /*height: 400px;*/
+            /*border: 1px solid black;*/
+        }
     </style>
 @endassets
 
 <div>
-    <h1 class="text-2xl font-bold mb-3">Text Editor</h1>
+    <h1 class="text-2xl text-indigo-500 font-bold mb-3">Code Editor</h1>
+    {{--  Editor  --}}
     <div wire:ignore>
-        <div class="overflow-hidden">
-            <textarea id="editor" ></textarea>
+        <div class="overflow-hidden rounded-md text-sm">
+            <textarea id="editor"></textarea>
         </div>
         <button
             id="btnRun"

@@ -10,10 +10,14 @@ class OutputEditor extends Component
 {
 //    #[Reactive]
     public $output;
+    public $result;
+    public $runTime;
 
     public function mount($output)
     {
         $this->output = $output;
+        $this->result = "No Result";
+        $this->runTime = "Runtime";
     }
 
     #[On('send-output')]
