@@ -42,6 +42,7 @@
         /*===== SCROLL BAR =====*/
         ::-webkit-scrollbar {
             width: 0.45rem;
+            max-height: 0.45rem;
         }
 
         /* Track */
@@ -62,6 +63,7 @@
         }
     </style>
     @vite(['resources/css/app.css'])
+    @vite(['resources/js/app.js'])
     @livewireStyles
 </head>
 <body class="bg-gray-200">
@@ -95,7 +97,7 @@
             </div>
 
             {{--  Question  --}}
-            <div class="overflow-auto bg-white rounded py-3 px-4 shadow" id="question">
+            <div class="overflow-auto bg-white rounded p-5 shadow" id="question">
                 <div class="">
                     <p dir="ltr" style="line-height: 1.38; text-align: center; margin-top: 0pt; margin-bottom: 0pt;"><span style="font-size: 20pt; font-family: 'Times New Roman',serif; color: #000000; background-color: transparent; font-weight: bold; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">CARD TRICK</span></p>
                     <p><span id="docs-internal-guid-ea197e7d-7fff-6eb5-0da0-5e0bed91855a">&nbsp;</span></p>
@@ -138,7 +140,7 @@
         </div>
 
         {{--  Right Panel  --}}
-        <div id="split-1" class="overflow-auto bg-white rounded py-1.5 px-2 shadow">
+        <div id="split-1" class="overflow-auto bg-white rounded p-5 shadow">
             <livewire:editor.text-editor />
         </div>
     </div>

@@ -77,11 +77,13 @@
                 <option value="noctisLilac">Noctis Lilac</option>
             </select>
         </div>
-        <livewire:editor.output-editor :$output/>
+        <div>
+            <livewire:editor.output-editor :$output/>
+        </div>
     </div>
 </div>
 
-@vite(['resources/js/app.js'])
+@script
 <script type="module">
     const btnRun = document.getElementById('btnRun');
     const themePicker = document.getElementById('themePicker');
@@ -167,3 +169,4 @@ int main()
     window.sendCode = sendCode
     window.changeLanguage = changeLanguage;
 </script>
+@endscript
